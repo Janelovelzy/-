@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/head_layout"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/phoenix_dimen_5"
+        android:padding="@dimen/phoenix_dimen_16"
+        android:text="用户名"
+        android:id="@+id/tv_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:background="#f1f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/phoenix_dimen_5"
+        android:padding="@dimen/phoenix_dimen_16"
+        android:text="我的收藏"
+        android:id="@+id/tv_store"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:background="#f1f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/phoenix_dimen_5"
+        android:padding="@dimen/phoenix_dimen_16"
+        android:text="退出登录"
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:background="#f1f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

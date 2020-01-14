@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="菜品详情"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_zan"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/menu_collect_false"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:scaleType="fitXY"
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:id="@+id/tv_name"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_floor"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_zw_num"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+      <View
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="5dp"
+          android:background="#f2f2f2"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"/>
+    <TextView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textStyle="bold"
+        android:text="菜品评价"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="@dimen/dp_10"
+        android:layout_weight="1"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:padding="6dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:paddingLeft="@dimen/dp_10"
+            android:id="@+id/et_content"
+            android:textSize="@dimen/sp_12"
+            android:hint="请输入"
+            android:background="@drawable/shap_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_send"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="发送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+   </LinearLayout>

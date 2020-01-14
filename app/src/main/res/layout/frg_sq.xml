@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shap_4"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:textSize="14sp"
+            android:id="@+id/et"
+            android:hint="搜索帖子"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+
+            android:scaleType="fitCenter"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tv_search"
+            android:src="@mipmap/search"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
